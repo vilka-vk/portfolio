@@ -27,7 +27,7 @@
 
 <main id="top">
   <!-- HERO / HEADER (Figma: Header) -->
-  <section class="narrow hero">
+  <section class="narrow hero" id="about">
     <p class="hero-text">
       Senior Product Designer — I design scalable mobile and web interfaces for B2B and B2C clients.
       I use an AI-first approach in my work to test hypotheses and speed up product development.
@@ -91,7 +91,7 @@
   </section>
 
   <!-- WORK (Figma: Section:transform — wide light cards) -->
-  <section class="wide work">
+  <section class="wide work" id="work">
     <article class="card" id="work-bashnya">
       <div class="shot shot-1" role="img" aria-label="Bashnya game UI preview">
         <img class="shot-img" src="work-bashnya.jpg" alt="Bashnya game UI" onerror="this.remove()">
@@ -172,6 +172,13 @@
     </span>
   </footer>
 </main>
+  <div class="floating-dock">
+    <nav class="floating-menu" aria-label="Sections">
+      <div class="menu-indicator" id="menuIndicator"></div>
+      <a href="#about" class="menu-item snd" id="linkAbout">About</a>
+      <a href="#work" class="menu-item snd" id="linkWork">Work</a>
+    </nav>
+  </div>
 <script src="script.js"></script>
 <script type="module">
 // Hover tick sounds, like adrien.website (cuelume)

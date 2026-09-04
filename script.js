@@ -37,3 +37,47 @@
   }, { threshold: 0.08 });
   cards.forEach(function (c) { io.observe(c); });
 })();
+
+// Floating dock indicator + scrollspy (like adrien.website)
+(function () {
+  var menu = document.querySelector('.floating-menu');
+  if (!menu) return;
+  var indicator = document.getElementById('menuIndicator');
+  var items = Array.prototype.slice.call(menu.querySelectorAll('.menu-item'));
+  var linkAbout = document.getElementById('linkAbout');
+  var linkWork = document.getElementById('linkWork');
+  var about = document.getElementById('about');
+  var work = document.getElementById('work');
+  var active = linkAbout;
+  var hovering = false;
+  function move(target) {
+    if (!target) { indicator.style.opacity = '0'; return; }
+    var mr = menu.getBoundingClientRect();
+    var r = target.getBoundingClientRect();
+    indicator.style.transform = 'translateX(' + (r.left - mr.left) + 'px)';
+    indicator.style.width = r.width + 'px';
+    indicator.style.opacity = '1';
+  }
+  function setActive(link) {
+    active = link;
+    items.forEach(function (i) { i.classList.toggle('active', i === link); });
+    if (!hovering) move(link);
+  }
+  items.forEach(function (it) {
+    it.addEventListener('mouseenter', function () { hovering = true; move(it); });
+  });
+  menu.addEventListener('mouseleave', function () { hovering = false; move(active); });
+  if ('IntersectionObserver' in window && work) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        setActive(en.target.id === 'work' ? linkWork : linkAbout);
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    if (about) io.observe(about);
+    io.observe(work);
+  } else {
+    setActive(linkAbout);
+  }
+  window.addEventListener('resize', function () { move(active); });
+})();
