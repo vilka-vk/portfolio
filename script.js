@@ -167,3 +167,18 @@
     if (Math.abs(dx) > 40) show(idx + (dx < 0 ? 1 : -1));
   });
 })();
+
+// Magnifier cursor that follows mouse over shots
+(function () {
+  if (window.matchMedia('(hover:none),(pointer:coarse)').matches) return;
+  var cur = document.getElementById('zoomCursor');
+  if (!cur) return;
+  var shots = document.querySelectorAll('.shot:has(.shot-img)');
+  var raf = 0, mx = 0, my = 0;
+  function onMove(e) { mx = e.clientX; my = e.clientY; if (!raf) raf = requestAnimationFrame(function () { cur.style.left = mx + 'px'; cur.style.top = my + 'px'; raf = 0; }); }
+  shots.forEach(function (s) {
+    s.addEventListener('mouseenter', function () { cur.classList.add('visible'); });
+    s.addEventListener('mouseleave', function () { cur.classList.remove('visible'); });
+    s.addEventListener('mousemove', onMove);
+  });
+})();
