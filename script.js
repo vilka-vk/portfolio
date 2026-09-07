@@ -81,3 +81,19 @@
   }
   window.addEventListener('resize', function () { move(active); });
 })();
+
+// "Top up" button: appears near page bottom, scrolls to top
+(function () {
+  var btn = document.getElementById('toTop');
+  if (!btn) return;
+  function onScroll() {
+    var nearBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 240;
+    btn.classList.toggle('visible', nearBottom);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();

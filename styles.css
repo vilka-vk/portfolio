@@ -14,13 +14,14 @@ a:hover{text-decoration-color:var(--text)}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .avatar{position:relative;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;overflow:hidden;font-family:var(--mono);font-size:20px;font-weight:500;color:#fff;background:linear-gradient(135deg,#8b5cf6,#ec4899)}
 .avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.brand-name{font-family:var(--mono);font-size:20px;letter-spacing:-.01em;text-decoration:none}
+.brand-name{font-family:var(--mono);font-size:20px;letter-spacing:-1px;text-decoration:none}
 
 main{padding-bottom:110px}
 .narrow{max-width:640px;margin:0 auto;padding:0 20px}
 .wide{max-width:920px;margin:0 auto;padding:0 20px}
 .hero{padding-top:56px;padding-bottom:20px}
 .hero-text{font-size:16px;line-height:1.7;margin-bottom:22px;color:var(--text)}
+.hero-title{font-size:16px;line-height:1.7;font-weight:600;margin-bottom:22px;color:var(--text)}
 .hero-text.contacts{color:var(--muted)}
 .cols{display:grid;grid-template-columns:150px 1fr;gap:24px;padding-top:44px}
 .label{font-family:var(--mono);font-size:20px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);padding-top:2px}
@@ -72,7 +73,12 @@ a.row:hover .row-title{text-decoration:underline;text-underline-offset:3px}
 .shot-3{background:linear-gradient(180deg,#0f172a,#1e1b4b)}
 .shot-4{background:linear-gradient(180deg,#181310,#3b2a1a)}
 .shot-5{background:linear-gradient(180deg,#f4f4f5,#dfe3ea)}
-.footer{display:flex;justify-content:space-between;align-items:center;padding-top:60px;padding-bottom:30px;font-family:var(--mono);font-size:20px;color:var(--faint)}
+.footer{position:relative;display:flex;justify-content:space-between;align-items:center;padding-top:60px;padding-bottom:30px;font-family:var(--mono);font-size:20px;color:var(--faint)}
+.to-top{position:absolute;left:100%;top:50%;transform:translateY(-50%);margin-left:20px;display:inline-flex;align-items:center;gap:6px;white-space:nowrap;font-family:var(--mono);font-size:14px;color:var(--faint);text-decoration:none;opacity:0;pointer-events:none;transition:opacity .3s ease,color .2s ease}
+.to-top.visible{opacity:1;pointer-events:auto}
+.to-top:hover{color:var(--text);text-decoration:none}
+.to-top svg{width:14px;height:14px}
+@media(max-width:1100px){.to-top{display:none}}
 .contact-block{padding-top:4px}
 .contact-btns{display:flex;gap:12px;flex-wrap:wrap}
 .contact-btn{display:inline-flex;align-items:center;gap:10px;padding:6px 16px;border:1px solid #f4f4f5;border-radius:999px;background:#f4f4f5;color:#111113;text-decoration:none;font-size:15px;font-weight:500;transition:background-color .2s ease,border-color .2s ease,transform .16s ease}
