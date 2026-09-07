@@ -107,6 +107,8 @@
   var lbCap = document.getElementById('lightboxCaption');
   var lbDots = document.getElementById('lightboxDots');
   var backdrop = lb.querySelector('.lightbox-backdrop');
+  var btnPrev = document.getElementById('lightboxPrev');
+  var btnNext = document.getElementById('lightboxNext');
   var idx = 0;
   var items = cards.map(function (c) {
     var img = c.querySelector('.shot-img');
@@ -153,6 +155,8 @@
   });
   backdrop.addEventListener('click', close);
   lbImg.addEventListener('click', close);
+  if (btnPrev) btnPrev.addEventListener('click', function (e) { e.stopPropagation(); show(idx - 1); });
+  if (btnNext) btnNext.addEventListener('click', function (e) { e.stopPropagation(); show(idx + 1); });
   document.addEventListener('keydown', function (e) {
     if (!lb.classList.contains('open')) return;
     if (e.key === 'Escape') close();

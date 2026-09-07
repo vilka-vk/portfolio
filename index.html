@@ -185,7 +185,11 @@
   <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog">
     <div class="lightbox-backdrop"></div>
     <div class="lightbox-content">
-      <div class="lightbox-img-wrapper"><img class="lightbox-img" id="lightboxImg" src="" alt=""></div>
+      <div class="lightbox-img-wrapper">
+        <button class="lightbox-arrow prev" id="lightboxPrev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18L9 12l6-6"/></svg></button>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="">
+        <button class="lightbox-arrow next" id="lightboxNext" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
       <p class="lightbox-caption" id="lightboxCaption"></p>
       <div class="lightbox-dots" id="lightboxDots"></div>
     </div>
