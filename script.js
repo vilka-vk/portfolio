@@ -171,3 +171,24 @@
     if (Math.abs(dx) > 40) show(idx + (dx < 0 ? 1 : -1));
   });
 })();
+
+// RU/EN language toggle for case pages
+(function () {
+  var t = document.getElementById('langToggle');
+  if (!t) return;
+  var btns = Array.prototype.slice.call(t.querySelectorAll('button'));
+  function paint(l) {
+    btns.forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-lang') === l); });
+  }
+  function set(l) {
+    document.body.setAttribute('data-lang', l);
+    paint(l);
+    try { localStorage.setItem('vm-lang', l); } catch (e) {}
+  }
+  var saved = null;
+  try { saved = localStorage.getItem('vm-lang'); } catch (e) {}
+  set(saved === 'en' ? 'en' : 'ru');
+  btns.forEach(function (b) {
+    b.addEventListener('click', function () { set(b.getAttribute('data-lang')); });
+  });
+})();
