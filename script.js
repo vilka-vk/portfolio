@@ -192,3 +192,42 @@
     b.addEventListener('click', function () { set(b.getAttribute('data-lang')); });
   });
 })();
+
+// Inline sliders (case pages): arrows, dots, swipe
+(function () {
+  document.querySelectorAll('[data-slider]').forEach(function (s) {
+    var track = s.querySelector('.slides');
+    var n = track.children.length;
+    if (!n) return;
+    var dotsBox = s.querySelector('.lightbox-dots');
+    var idx = 0;
+    function paint() {
+      track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+      if (dotsBox) Array.prototype.forEach.call(dotsBox.children, function (d, j) {
+        d.classList.toggle('active', j === idx);
+      });
+    }
+    function go(i) { idx = (i + n) % n; paint(); }
+    if (dotsBox) {
+      for (var k = 0; k < n; k++) {
+        (function (j) {
+          var d = document.createElement('div');
+          d.className = 'lightbox-dot';
+          d.addEventListener('click', function () { go(j); });
+          dotsBox.appendChild(d);
+        })(k);
+      }
+    }
+    var prev = s.querySelector('.prev');
+    var next = s.querySelector('.next');
+    if (prev) prev.addEventListener('click', function () { go(idx - 1); });
+    if (next) next.addEventListener('click', function () { go(idx + 1); });
+    var sx = 0;
+    s.addEventListener('touchstart', function (e) { sx = e.touches[0].clientX; }, { passive: true });
+    s.addEventListener('touchend', function (e) {
+      var dx = e.changedTouches[0].clientX - sx;
+      if (Math.abs(dx) > 40) go(idx + (dx < 0 ? 1 : -1));
+    });
+    paint();
+  });
+})();
