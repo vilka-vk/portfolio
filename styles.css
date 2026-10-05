@@ -52,11 +52,14 @@ a.row:hover .row-title{text-decoration:underline;text-underline-offset:3px}
 .caption-title{font-size:17px;font-weight:500;color:var(--text);margin-bottom:6px}
 .caption-text{font-size:15px;line-height:1.65;color:var(--muted)}
 .caption-text b{color:var(--text);font-weight:600}
-.case-link{display:inline-block;margin-top:10px;font-size:14px;font-weight:500;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--faint)}
+.case-link{display:inline-flex;align-items:center;margin-top:12px;padding:7px 16px;border:1px solid #f4f4f5;border-radius:999px;background:#f4f4f5;color:#111113;font-size:14px;font-weight:600;text-decoration:none;transition:background-color .2s ease,border-color .2s ease,transform .16s ease}
 .card-link{display:block;color:inherit;text-decoration:none}
 .card-link:hover{text-decoration:none}
 .card-link .caption-title,.card-link .caption-text{text-decoration:none}
-a.card-link:hover .case-link{text-decoration-color:var(--text)}
+a.card-link:hover .case-link{background:#fff;border-color:#fff;transform:translateY(-1px);text-decoration:none}
+a.card-link:active .case-link{transform:scale(.97)}
+[data-theme="light"] .case-link{background:#111113;border-color:#111113;color:#fafafa}
+[data-theme="light"] a.card-link:hover .case-link{background:#000;border-color:#000;color:#fff;transform:translateY(-1px)}
 /* Work tabs — same pill look as floating-menu, static, no sounds */
 .work-tabs{align-self:center;display:inline-flex;align-items:center;height:44px;padding:4px;border-radius:100px;background:rgba(20,20,23,.85);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border:1px solid var(--line);box-shadow:0 12px 30px rgba(0,0,0,.35)}
 [data-theme="light"] .work-tabs{background:rgba(255,255,255,.9);box-shadow:0 12px 30px rgba(0,0,0,.12)}
@@ -130,7 +133,7 @@ a.card-link:hover .case-link{text-decoration-color:var(--text)}
 .lang-toggle button.on{background:var(--text);color:var(--bg)}
 
 /* Header language toggle */
-.topbar-inner .lang-toggle{margin-left:12px}
+.topbar-actions{display:flex;align-items:center;gap:12px;flex-shrink:0}
 .case h2{font-size:24px;font-weight:600;margin:48px 0 16px;letter-spacing:-.01em}
 .case h3{font-size:19px;font-weight:600;margin:32px 0 12px}
 .case h4{font-size:16px;font-weight:600;margin:24px 0 8px}
