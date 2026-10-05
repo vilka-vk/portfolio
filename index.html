@@ -89,7 +89,7 @@
   <section class="narrow cols">
     <div class="label"><span class="lru">Навыки</span><span class="len">Skills</span></div>
     <div class="rows skills">
-      <div class="row"><div class="row-main"><span class="row-sub"><b><span class="lru">Продукт и UX:</span><span class="len">Product & UX:</span></b> <span class="lru">UX-исследования, пользовательские сценарии, CJM, дизайн-системы, A/B-тестирование, многорольной UX, доступность (WCAG)</span><span class="len">UX Research, User Flows, CJM, Design Systems, A/B Testing, Multi-role UX, Accessibility (WCAG)</span></span></div></div>
+      <div class="row"><div class="row-main"><span class="row-sub"><b><span class="lru">Продукт и UX:</span><span class="len">Product & UX:</span></b> <span class="lru">UX-исследования, пользовательские сценарии, CJM, дизайн-системы, A/B-тестирование, многоролевой UX, доступность (WCAG)</span><span class="len">UX Research, User Flows, CJM, Design Systems, A/B Testing, Multi-role UX, Accessibility (WCAG)</span></span></div></div>
       <div class="row"><div class="row-main"><span class="row-sub"><b><span class="lru">AI:</span><span class="len">AI:</span></b> <span class="lru">Cursor, Claude (Code & Design), OpenCode, Figma Make, Google AI Studio</span><span class="len">Cursor, Claude (Code & Design), OpenCode, Figma Make, Google AI Studio</span></span></div></div>
       <div class="row"><div class="row-main"><span class="row-sub"><b><span class="lru">Инструменты:</span><span class="len">Tools:</span></b> <span class="lru">Figma, Miro, Notion, Asana, Adobe Creative Suite</span><span class="len">Figma, Miro, Notion, Asana, Adobe Creative Suite</span></span></div></div>
       <div class="row"><div class="row-main"><span class="row-sub"><b><span class="lru">Лидерство:</span><span class="len">Leadership:</span></b> <span class="lru">Управление командой, найм и онбординг, менторство</span><span class="len">Team Management, Hiring & Onboarding, Mentorship</span></span></div></div>
@@ -100,97 +100,112 @@
 
   <!-- WORK (Figma: Section:transform — wide light cards) -->
   <section class="wide work" id="work">
-    <article class="card" id="work-bashnya">
-      <div class="shot shot-1" role="img" aria-label="Bashnya game UI preview">
-        <img class="shot-img" src="work-bashnya.jpg" alt="Bashnya game UI" onerror="this.remove()">
-        <div class="mock browser"><div class="mock-bar"><i></i><i></i><i></i></div><div class="mock-grid"><span></span><span></span><span class="accent"></span><span></span><span></span><span></span></div></div>
-      </div>
-<div class="caption">
-        <div class="caption-title">Bashnya</div>
-        <p class="caption-text"><span class="lru">Игровой интерфейс и UI-кит. Разработка фич <span class="nowrap"><b>7 → 3 дня</b></span>, дизайн-в-дев <span class="nowrap"><b>5 → 2 дня</b></span>. AI-набор иконок и персонаж, похвален арт-директором</span><span class="len">Game interface & UI kit. Feature dev <span class="nowrap"><b>7 → 3 days</b></span>, design-to-dev <span class="nowrap"><b>5 → 2 days</b></span>. AI icon set & character praised by the art director</span></p>
-        <a class="case-link" href="cases/bashnya.html"><span class="lru">Читать кейс →</span><span class="len">Read case study →</span></a>
-      </div>
+  <div class="work-tabs">
+    <a href="#" class="work-tab active" data-tab="products"><span class="lru">Продукты</span><span class="len">Products</span></a>
+    <a href="#" class="work-tab" data-tab="other"><span class="lru">Другое</span><span class="len">Other</span></a>
+  </div>
+<article class="card" id="work-bashnya" data-tab="other" style="display:none">
+      <a href="cases/bashnya.html" class="card-link">
+        <div class="shot shot-1" role="img" aria-label="Bashnya game UI preview">
+          <img class="shot-img" src="work-bashnya.jpg" alt="Bashnya game UI" onerror="this.remove()">
+          <div class="mock browser"><div class="mock-bar"><i></i><i></i><i></i></div><div class="mock-grid"><span></span><span></span><span class="accent"></span><span></span><span></span><span></span></div></div>
+        </div>
+        <div class="caption">
+          <div class="caption-title">Bashnya</div>
+          <p class="caption-text"><span class="lru">Игровой интерфейс и UI-кит. Разработка фич <span class="nowrap"><b>7 → 3 дня</b></span>, дизайн-в-дев <span class="nowrap"><b>5 → 2 дня</b></span>. AI-набор иконок и персонаж, похвален арт-директором</span><span class="len">Game interface & UI kit. Feature dev <span class="nowrap"><b>7 → 3 days</b></span>, design-to-dev <span class="nowrap"><b>5 → 2 days</b></span>. AI icon set & character praised by the art director</span></p>
+        </div>
+      </a>
     </article>
 
-    <article class="card" id="work-forrest">
-      <div class="shot shot-2" role="img" aria-label="Forrest ERP mobile preview">
-        <img class="shot-img" src="work-forrest.jpg" alt="Forrest ERP" onerror="this.remove()">
-        <div class="mock phone"><div class="mock-notch"></div><div class="mock-lines"><span class="w60"></span><span></span><span class="accent"></span><span class="w40"></span></div></div>
-      </div>
-      <div class="caption">
-        <div class="caption-title">Forrest</div>
-        <p class="caption-text"><span class="lru">ERP/CRM для ресторанов, 3 роли + Канбан + конструктор зала. <span class="nowrap"><b>−28%</b> время заказа</span>, <span class="nowrap"><b>−25%</b> время бронирования</span>, <span class="nowrap"><b>−37%</b> конфликтов</span>. Миграция MUI → кастомная Mantis</span><span class="len">ERP/CRM for restaurants, 3 roles + Kanban + dining-room configurator. <span class="nowrap"><b>−28%</b> order</span> time, <span class="nowrap"><b>−25%</b> reservation</span> time, <span class="nowrap"><b>−37%</b> conflicts</span>. Migrated MUI → custom Mantis system</span></p>
-        <a class="case-link" href="cases/forrest.html"><span class="lru">Читать кейс →</span><span class="len">Read case study →</span></a>
-      </div>
+    <article class="card" id="work-forrest" data-tab="products">
+      <a href="cases/forrest.html" class="card-link">
+        <div class="shot shot-2" role="img" aria-label="Forrest ERP mobile preview">
+          <img class="shot-img" src="work-forrest.jpg" alt="Forrest ERP" onerror="this.remove()">
+          <div class="mock phone"><div class="mock-notch"></div><div class="mock-lines"><span class="w60"></span><span></span><span class="accent"></span><span class="w40"></span></div></div>
+        </div>
+        <div class="caption">
+          <div class="caption-title">Forrest</div>
+          <p class="caption-text"><span class="lru">ERP/CRM для ресторанов, 3 роли + Канбан + конструктор зала. <span class="nowrap"><b>−28%</b> время заказа</span>, <span class="nowrap"><b>−25%</b> время бронирования</span>, <span class="nowrap"><b>−37%</b> конфликтов</span>. Миграция MUI → кастомная Mantis</span><span class="len">ERP/CRM for restaurants, 3 roles + Kanban + dining-room configurator. <span class="nowrap"><b>−28%</b> order</span> time, <span class="nowrap"><b>−25%</b> reservation</span> time, <span class="nowrap"><b>−37%</b> conflicts</span>. Migrated MUI → custom Mantis system</span></p>
+        </div>
+      </a>
     </article>
 
-    <article class="card" id="work-kant">
-      <div class="shot shot-3" role="img" aria-label="Kant website preview">
-        <img class="shot-img" src="work-kant.jpg" alt="Kant website" onerror="this.remove()">
-        <div class="mock browser"><div class="mock-bar"><i></i><i></i><i></i></div><div class="mock-hero"><span></span></div><div class="mock-grid"><span></span><span></span><span></span></div></div>
-      </div>
-      <div class="caption">
-        <div class="caption-title">Kant</div>
-        <p class="caption-text"><span class="lru">Соло энд-ту-энд: UX/UI, фронтенд и своя CMS. AI-ассистированная разработка в Cursor (генерация → рефакторинг → дебаг). Без этапа хэндоффа</span><span class="len">Solo end-to-end: UX/UI, frontend and custom CMS. AI-assisted build in Cursor (generate → refactor → debug). No handoff step</span></p>
-      </div>
+    <article class="card" id="work-kant" data-tab="other" style="display:none">
+      <a href="#">
+        <div class="shot shot-3" role="img" aria-label="Kant website preview">
+          <img class="shot-img" src="work-kant.jpg" alt="Kant website" onerror="this.remove()">
+          <div class="mock browser"><div class="mock-bar"><i></i><i></i><i></i></div><div class="mock-hero"><span></span></div><div class="mock-grid"><span></span><span></span><span></span></div></div>
+        </div>
+        <div class="caption">
+          <div class="caption-title">Kant</div>
+          <p class="caption-text"><span class="lru">Соло end-to-end: UX/UI, фронтенд и своя CMS. AI разработка в Cursor (генерация → рефакторинг → дебаг). Без этапа хэндоффа</span><span class="len">Solo end-to-end: UX/UI, frontend and custom CMS. AI-assisted build in Cursor (generate → refactor → debug). No handoff step</span></p>
+        </div>
+      </a>
     </article>
 
-    <article class="card" id="work-gutstuff">
-      <div class="shot shot-4" role="img" aria-label="The Gut Stuff app preview">
-        <img class="shot-img" src="work-gutstuff.jpg" alt="The Gut Stuff app" onerror="this.remove()">
-        <div class="mock phone dark"><div class="mock-notch"></div><div class="mock-img"></div><div class="mock-lines"><span></span><span class="w60"></span></div></div>
-      </div>
-      <div class="caption">
-        <div class="caption-title">The Gut Stuff</div>
-        <p class="caption-text"><span class="lru">B2C MVP с нуля (трекеры, отчёты, геймификация) + редизайн после тестов. <span class="nowrap"><b>10K+ загрузок</b></span>, запуск за <span class="nowrap"><b>6 месяцев</b></span>, <span class="nowrap">100% скоуп</span></span><span class="len">B2C MVP from scratch (trackers, reports, gamification) + redesign after testing. <span class="nowrap"><b>10K+ downloads</b></span>, launched in <span class="nowrap"><b>6 months</b></span>, <span class="nowrap">100% scope</span></span></p>
-        <a class="case-link" href="cases/gutstuff.html"><span class="lru">Читать кейс →</span><span class="len">Read case study →</span></a>
-      </div>
+    <article class="card" id="work-gutstuff" data-tab="products">
+      <a href="cases/gutstuff.html" class="card-link">
+        <div class="shot shot-4" role="img" aria-label="The Gut Stuff app preview">
+          <img class="shot-img" src="work-gutstuff.jpg" alt="The Gut Stuff app" onerror="this.remove()">
+          <div class="mock phone dark"><div class="mock-notch"></div><div class="mock-img"></div><div class="mock-lines"><span></span><span class="w60"></span></div></div>
+        </div>
+        <div class="caption">
+          <div class="caption-title">The Gut Stuff</div>
+          <p class="caption-text"><span class="lru">B2C MVP с нуля (трекеры, отчёты, геймификация) + редизайн после тестов. <span class="nowrap"><b>10K+ загрузок</b></span>, запуск за <span class="nowrap"><b>6 месяцев</b></span>, <span class="nowrap">100% скоуп</span></span><span class="len">B2C MVP from scratch (trackers, reports, gamification) + redesign after testing. <span class="nowrap"><b>10K+ downloads</b></span>, launched in <span class="nowrap"><b>6 months</b></span>, <span class="nowrap">100% scope</span></span></p>
+        </div>
+      </a>
     </article>
 
-    <article class="card" id="work-saymore">
-      <div class="shot shot-1" role="img" aria-label="SayMore platform preview">
-        <img class="shot-img" src="work-saymore.jpg" alt="SayMore platform" onerror="this.remove()">
-        <div class="mock browser"><div class="mock-bar"><i></i><i></i><i></i></div><div class="mock-grid"><span class="accent"></span><span></span><span></span><span></span><span></span><span></span></div></div>
-      </div>
-      <div class="caption">
-        <div class="caption-title">SayMore</div>
-        <p class="caption-text"><span class="lru">B2B2C социальная платформа, десктопный MVP в одиночку за <span class="nowrap"><b>3 недели</b></span>. Масштабируемая дизайн-система, <span class="nowrap"><b>1000+ адаптивных экранов</b></span></span><span class="len">B2B2C social platform, desktop MVP designed solo in <span class="nowrap"><b>3 weeks</b></span>. Scalable design system, <span class="nowrap"><b>1000+ responsive screens</b></span></span></p>
-        <a class="case-link" href="cases/saymore.html"><span class="lru">Читать кейс →</span><span class="len">Read case study →</span></a>
-      </div>
+    <article class="card" id="work-saymore" data-tab="products">
+      <a href="cases/saymore.html" class="card-link">
+        <div class="shot shot-1" role="img" aria-label="SayMore platform preview">
+          <img class="shot-img" src="work-saymore.jpg" alt="SayMore platform" onerror="this.remove()">
+          <div class="mock browser"><div class="mock-bar"><i></i><i></i><i></i></div><div class="mock-grid"><span class="accent"></span><span></span><span></span><span></span><span></span><span></span></div></div>
+        </div>
+        <div class="caption">
+          <div class="caption-title">SayMore</div>
+          <p class="caption-text"><span class="lru">B2B2C социальная платформа, десктопный MVP в одиночку за <span class="nowrap"><b>3 недели</b></span>. Масштабируемая дизайн-система, <span class="nowrap"><b>1000+ адаптивных экранов</b></span></span><span class="len">B2B2C social platform, desktop MVP designed solo in <span class="nowrap"><b>3 weeks</b></span>. Scalable design system, <span class="nowrap"><b>1000+ responsive screens</b></span></span></p>
+        </div>
+      </a>
     </article>
 
-    <article class="card" id="work-oprosso">
-      <div class="shot shot-5" role="img" aria-label="Oprosso dashboard preview">
-        <img class="shot-img" src="work-oprosso.jpg" alt="Oprosso dashboard" onerror="this.remove()">
-        <div class="mock browser"><div class="mock-bar"><i></i><i></i><i></i></div><div class="mock-table"><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
-      </div>
-<div class="caption">
-        <div class="caption-title">Oprosso</div>
-        <p class="caption-text"><span class="lru">B2B-дашборды для 3 ролей, интерактивные прототипы в Figma, скрам-трио. <span class="nowrap"><b>−18%</b> время отчётов</span>, <span class="nowrap"><b>−12%</b> ошибки настройки</span>, <span class="nowrap"><b>−15%</b> тикетов в поддержку</span></span><span class="len">B2B dashboards for 3 roles, interactive Figma prototypes, Scrum trio. <span class="nowrap"><b>−18%</b> report</span> time, <span class="nowrap"><b>−12%</b> setup</span> errors, <span class="nowrap"><b>−15%</b> support</span> tickets</span></p>
-        <a class="case-link" href="cases/oprosso.html"><span class="lru">Читать кейс →</span><span class="len">Read case study →</span></a>
-      </div>
+<article class="card" id="work-oprosso" data-tab="products">
+      <a href="cases/oprosso.html" class="card-link">
+        <div class="shot shot-5" role="img" aria-label="Oprosso dashboard preview">
+          <img class="shot-img" src="work-oprosso.jpg" alt="Oprosso dashboard" onerror="this.remove()">
+          <div class="mock browser"><div class="mock-bar"><i></i><i></i><i></i></div><div class="mock-table"><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+        </div>
+        <div class="caption">
+          <div class="caption-title">Oprosso</div>
+          <p class="caption-text"><span class="lru">B2B-дашборды, админ-панель для 3 ролей, интерактивные прототипы в Figma, скрам-трио. <span class="nowrap"><b>−18%</b> время отчётов</span>, <span class="nowrap"><b>−12%</b> ошибки настройки</span>, <span class="nowrap"><b>−15%</b> тикетов в поддержку</span></span><span class="len">B2B dashboards, admin-panel for 3 roles, interactive Figma prototypes, Scrum trio. <span class="nowrap"><b>−18%</b> report</span> time, <span class="nowrap"><b>−12%</b> setup</span> errors, <span class="nowrap"><b>−15%</b> support</span> tickets</span></p>
+        </div>
+      </a>
     </article>
     
-    <article class="card" id="work-trinoray">
-      <div class="shot shot-3" role="img" aria-label="Trinoray search results preview">
-        <img class="shot-img" src="work-trinoray.jpg" alt="Trinoray search results" onerror="this.remove()">
-        <div class="mock browser"><div class="mock-bar"><i></i><i></i><i></i></div><div class="mock-hero"><span></span></div><div class="mock-grid"><span></span><span></span><span></span></div></div></div>
-      <div class="caption">
-        <div class="caption-title">Trinoray</div>
-        <p class="caption-text"><span class="lru">UX-исследования и редизайн поискового интерфейса. Оптимизация логики помогла проекту получить <span class="nowrap"><b>раунд инвестиций</b></span></span><span class="len">UX Research and Search Interface Redesign. Optimizing the logic helped the project secure a <span class="nowrap"><b>round of funding</b></span></span></p>
-        <a class="case-link" href="cases/trinoray.html"><span class="lru">Читать кейс →</span><span class="len">Read case study →</span></a>
-      </div>
+    <article class="card" id="work-trinoray" data-tab="other">
+      <a href="cases/trinoray.html" class="card-link">
+        <div class="shot shot-3" role="img" aria-label="Trinoray search results preview">
+          <img class="shot-img" src="work-trinoray.jpg" alt="Trinoray search results" onerror="this.remove()">
+          <div class="mock browser"><div class="mock-bar"><i></i><i></i><i></i></div><div class="mock-hero"><span></span></div><div class="mock-grid"><span></span><span></span><span></span></div></div></div>
+        </div>
+        <div class="caption">
+          <div class="caption-title">Trinoray</div>
+          <p class="caption-text"><span class="lru">UX-исследования и редизайн поискового интерфейса. Оптимизация логики помогла проекту получить <span class="nowrap"><b>раунд инвестиций</b></span></span><span class="len">UX Research and Search Interface Redesign. Optimizing the logic helped the project secure a <span class="nowrap"><b>round of funding</b></span></span></p>
+        </div>
+      </a>
     </article>
     
-    <article class="card" id="work-taromant">
-      <div class="shot shot-3" role="img" aria-label="Taromant wheel of fortune preview">
-        <img class="shot-img" src="work-taromant.jpg" alt="Taromant wheel of fortune" onerror="this.remove()">
-        <div class="mock browser"><div class="mock-bar"><i></i><i></i><i></i></div><div class="mock-hero"><span></span></div><div class="mock-grid"><span></span><span></span><span></span></div></div></div>
-      <div class="caption">
-        <div class="caption-title">Taromant</div>
-        <p class="caption-text"><span class="lru">AI-таро в Telegram-боте, soft-монетизация через Колесо фортуны. <span class="nowrap"><b>42%</b> D1 retention</span>, <span class="nowrap"><b>3.8%</b> конверсия в покупку пакета спинов</span></span><span class="len">AI Tarot Reader (Telegram bot), soft monetization via the Wheel of Fortune. <span class="nowrap"><b>42%</b> D1 retention</span>, <span class="nowrap"><b>3.8%</b> conversion</span> rate for spin package purchases</span></p>
-        <a class="case-link" href="cases/taromant.html"><span class="lru">Читать кейс →</span><span class="len">Read case study →</span></a>
-      </div>
+<article class="card" id="work-taromant" data-tab="other">
+      <a href="cases/taromant.html" class="card-link">
+        <div class="shot shot-3" role="img" aria-label="Taromant wheel of fortune preview">
+          <img class="shot-img" src="work-taromant.jpg" alt="Taromant wheel of fortune" onerror="this.remove()">
+          <div class="mock browser"><div class="mock-bar"><i></i><i></i><i></i></div><div class="mock-hero"><span></span></div><div class="mock-grid"><span></span><span></span><span></span></div></div></div>
+        </div>
+        <div class="caption">
+          <div class="caption-title">Taromant</div>
+          <p class="caption-text"><span class="lru">AI-таро в Telegram-боте, soft-монетизация через Колесо фортуны. <span class="nowrap"><b>42%</b> D1 retention</span>, <span class="nowrap"><b>3.8%</b> конверсия в покупку пакета спинов</span></span><span class="len">AI Tarot Reader (Telegram bot), soft monetization via the Wheel of Fortune. <span class="nowrap"><b>42%</b> D1 retention</span>, <span class="nowrap"><b>3.8%</b> conversion</span> rate for spin package purchases</p>
+        </div>
+      </a>
     </article>
   </section>
 
@@ -250,5 +265,39 @@ document.querySelectorAll('.snd').forEach(function (el) {
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/112384497" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+<script>
+  // Tab switching functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.work-tab');
+    const cards = document.querySelectorAll('.work .card');
+    
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function(e) {
+        e.preventDefault();
+        const tabName = this.getAttribute('data-tab');
+        
+        // Update active tab
+        tabs.forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Show/hide cards
+        cards.forEach(card => {
+          const cardTab = card.getAttribute('data-tab');
+          if (cardTab === tabName) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+    
+    // Initialize: show products tab by default
+    const initialTab = document.querySelector('.work-tab[data-tab="products"]');
+    if (initialTab) {
+      initialTab.click();
+    }
+  });
+</script>
 </body>
 </html>
