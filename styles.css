@@ -29,7 +29,6 @@ main{padding-bottom:110px}
 .row{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none}
 .row-main{display:flex;flex-direction:column;gap:2px;min-width:0}
 .row-title{font-size:15px;font-weight:500}
-a.row:hover .row-title{text-decoration:underline;text-underline-offset:3px}
 .row-sub{font-size:15px;color:var(--muted)}
 .row-sub b{color:var(--text);font-weight:600}
 .row-meta{display:flex;align-items:flex-start;gap:10px;flex-shrink:0}
