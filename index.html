@@ -22,6 +22,10 @@
       <svg id="iconSun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
       <svg id="iconMoon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" style="display:none"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
     </button>
+    <div class="lang-toggle" id="langToggle">
+      <button data-lang="ru" class="on" aria-label="Русский">RU</button>
+      <button data-lang="en" aria-label="English">EN</button>
+    </div>
   </div>
 </header>
 
@@ -29,66 +33,68 @@
   <!-- HERO / HEADER (Figma: Header) -->
   <section class="narrow hero" id="about">
     <h2 class="hero-title">
-      Senior Product Designer
+      <span class="lru">Старший продуктовый дизайнер</span>
+      <span class="len">Senior Product Designer</span>
     </h2>
     <p class="hero-text">
-      Design scalable mobile and web interfaces for B2B and B2C clients. Use an AI-first approach in my work to test hypotheses and speed up product development.
+      <span class="lru">Проектирую масштабируемые мобильные и веб-интерфейсы для B2B и B2C. Использую AI-first подход для проверки гипотез и ускорения продуктовой разработки.</span>
+      <span class="len">I design scalable mobile and web interfaces for B2B and B2C clients. I use an AI-first approach in my work to test hypotheses and speed up product development.</span>
     </p>
     <div class="contact-block">
       <div class="contact-btns">
         <a class="contact-btn li" href="https://linkedin.com/in/violetta-morozova" target="_blank" rel="noopener">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.65 3H4.35C3.99196 3 3.64858 3.14223 3.39541 3.39541C3.14223 3.64858 3 3.99196 3 4.35V19.65C3 20.008 3.14223 20.3514 3.39541 20.6046C3.64858 20.8578 3.99196 21 4.35 21H19.65C20.008 21 20.3514 20.8578 20.6046 20.6046C20.8578 20.3514 21 20.008 21 19.65V4.35C21 3.99196 20.8578 3.64858 20.6046 3.39541C20.3514 3.14223 20.008 3 19.65 3ZM8.4 18.3H5.7V10.2H8.4V18.3ZM7.05 8.625C6.74056 8.61616 6.4406 8.51632 6.18758 8.33797C5.93456 8.15962 5.7397 7.91066 5.62737 7.6222C5.51503 7.33374 5.49019 7.01857 5.55595 6.71607C5.6217 6.41358 5.77515 6.13716 5.9971 5.92138C6.21906 5.70559 6.49968 5.55999 6.80391 5.50278C7.10814 5.44556 7.42248 5.47927 7.70766 5.59969C7.99284 5.7201 8.23622 5.92189 8.40737 6.17983C8.57853 6.43778 8.66987 6.74044 8.67 7.05C8.66289 7.47331 8.4885 7.8766 8.18495 8.17173C7.88139 8.46685 7.47335 8.62982 7.05 8.625ZM18.3 18.3H15.6V14.034C15.6 12.756 15.06 12.297 14.358 12.297C14.1522 12.3107 13.9511 12.3649 13.7663 12.4566C13.5815 12.5482 13.4166 12.6755 13.2811 12.831C13.1457 12.9866 13.0422 13.1674 12.9 13.971C12.8955 14.0129 12.8955 14.0551 12.9 14.097V18.3H10.2V10.2H12.81V11.37C13.0733 10.9695 13.435 10.6433 13.8605 10.4227C14.286 10.2021 14.761 10.0944 15.24 10.11C16.635 10.11 18.264 10.884 18.264 13.404L18.3 18.3Z"/></svg>
-          <span>LinkedIn</span>
+          <span><span class="lru">LinkedIn</span><span class="len">LinkedIn</span></span>
         </a>
         <a class="contact-btn" href="Senior_Product_Designer_Violetta_Morozova_Eng.pdf" download="Senior_Product_Designer_Violetta_Morozova_Eng.pdf">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
-          <span>Download CV</span>
+          <span><span class="lru">Скачать CV</span><span class="len">Download CV</span></span>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- EXPERIENCE (Figma: Section) -->
+<!-- EXPERIENCE (Figma: Section) -->
   <section class="narrow cols experience">
-    <div class="label">Experience</div>
+    <div class="label"><span class="lru">Опыт</span><span class="len">Experience</span></div>
     <div class="rows">
       <a class="row" href="#work-bashnya">
-        <div class="row-main"><span class="row-title">Senior Product Designer / game &lt;Bashnya&gt;</span><span class="row-sub">Interface design, game UI, AI-assisted art pipelines</span></div>
+        <div class="row-main"><span class="row-title"><span class="lru">Старший продуктовый дизайнер / игра <Башня></span><span class="len">Senior Product Designer / game <Bashnya></span></span><span class="row-sub"><span class="lru">Дизайн интерфейсов, игровой UI, AI-ассистированные арт-пайплайны</span><span class="len">Interface design, game UI, AI-assisted art pipelines</span></span></div>
         <div class="row-meta"><span class="row-date">2026 — 2026</span><span class="badge" style="--b:#8b5cf6"><img src="logo-bashnya.svg" alt="Bashnya" onerror="this.remove()"></span></div>
       </a>
       <a class="row" href="#work-forrest">
-        <div class="row-main"><span class="row-title">Senior Product Designer / Forrest</span><span class="row-sub">ERP/CRM System for Restaurants</span></div>
+        <div class="row-main"><span class="row-title"><span class="lru">Старший продуктовый дизайнер / Forrest</span><span class="len">Senior Product Designer / Forrest</span></span><span class="row-sub"><span class="lru">ERP/CRM-система для ресторанов</span><span class="len">ERP/CRM System for Restaurants</span></span></div>
         <div class="row-meta"><span class="row-date">2025 — 2026</span><span class="badge" style="--b:#22c55e"><img src="logo-forrest.svg" alt="Forrest" onerror="this.remove()"></span></div>
       </a>
       <a class="row" href="#work-kant">
-        <div class="row-main"><span class="row-title">Senior Web Designer, Full-stack Developer / Kant</span><span class="row-sub">Educational website, UX/UI + frontend + custom CMS</span></div>
+        <div class="row-main"><span class="row-title"><span class="lru">Старший веб-дизайнер, Full-stack разработчик / Kant</span><span class="len">Senior Web Designer, Full-stack Developer / Kant</span></span><span class="row-sub"><span class="lru">Образовательный веб-сайт, UX/UI + фронтенд + собственная CMS</span><span class="len">Educational website, UX/UI + frontend + custom CMS</span></span></div>
         <div class="row-meta"><span class="row-date">2025 — 2026</span><span class="badge" style="--b:#FF5800"><img src="logo-kant.svg" alt="Kant" onerror="this.remove()"></span></div>
       </a>
       <a class="row" href="#work-gutstuff">
-        <div class="row-main"><span class="row-title">Senior Product Designer / JetRockets</span><span class="row-sub">The Gut Stuff (B2C) · SayMore (B2B2C) · MVPs from scratch</span></div>
+        <div class="row-main"><span class="row-title"><span class="lru">Старший продуктовый дизайнер / JetRockets</span><span class="len">Senior Product Designer / JetRockets</span></span><span class="row-sub"><span class="lru">The Gut Stuff (B2C) · SayMore (B2B2C) · MVP с нуля</span><span class="len">The Gut Stuff (B2C) · SayMore (B2B2C) · MVPs from scratch</span></span></div>
         <div class="row-meta"><span class="row-date">2021 — 2024</span><span class="badge" style="--b:#FCD547"><img src="logo-jetrockets.svg" alt="JetRockets" onerror="this.remove()"></span></div>
       </a>
       <a class="row" href="#work-oprosso">
-        <div class="row-main"><span class="row-title">Product Designer / Oprosso</span><span class="row-sub">SaaS platform for UX research</span></div>
+        <div class="row-main"><span class="row-title"><span class="lru">Продуктовый дизайнер / Oprosso</span><span class="len">Product Designer / Oprosso</span></span><span class="row-sub"><span class="lru">SaaS-платформа для UX-исследований</span><span class="len">SaaS platform for UX research</span></span></div>
         <div class="row-meta"><span class="row-date">2020 — 2021</span><span class="badge" style="--b:#7476f7"><img src="logo-oprosso.svg" alt="Oprosso" onerror="this.remove()"></span></div>
       </a>
       <div class="row">
-        <div class="row-main"><span class="row-title">Frontend Developer</span><span class="row-sub">Commercial interfaces, special project for 1tv.ru</span></div>
+        <div class="row-main"><span class="row-title"><span class="lru">Фронтенд-разработчик</span><span class="len">Frontend Developer</span></span><span class="row-sub"><span class="lru">Коммерческие интерфейсы, спецпроект для 1tv.ru</span><span class="len">Commercial interfaces, special project for 1tv.ru</span></span></div>
         <div class="row-meta"><span class="row-date">2014 — 2020</span><span class="badge" style="--b:#71717a"><img src="logo-code.svg" alt="Frontend" onerror="this.remove()"></span></div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS (Figma: skills block) -->
+<!-- SKILLS (Figma: skills block) -->
   <section class="narrow cols">
-    <div class="label">Skills</div>
+    <div class="label"><span class="lru">Навыки</span><span class="len">Skills</span></div>
     <div class="rows skills">
-      <div class="row"><div class="row-main"><span class="row-sub"><b>Product &amp; UX:</b> UX Research, User Flows, CJM, Design Systems, A/B Testing, Multi-role UX, Accessibility (WCAG)</span></div></div>
-      <div class="row"><div class="row-main"><span class="row-sub"><b>AI:</b> Cursor, Claude (Code &amp; Design), OpenCode, Figma Make, Google AI Studio</span></div></div>
-      <div class="row"><div class="row-main"><span class="row-sub"><b>Tools:</b> Figma, Miro, Notion, Asana, Adobe Creative Suite</span></div></div>
-      <div class="row"><div class="row-main"><span class="row-sub"><b>Leadership:</b> Team Management, Hiring &amp; Onboarding, Mentorship</span></div></div>
-      <div class="row"><div class="row-main"><span class="row-sub"><b>Frontend:</b> HTML5, CSS3, JavaScript, Git, responsive &amp; cross-browser layout</span></div></div>
-      <div class="row"><div class="row-main"><span class="row-sub"><b>Languages:</b> English (B1 — Intermediate), Russian (Native)</span></div></div>
+      <div class="row"><div class="row-main"><span class="row-sub"><b><span class="lru">Продукт и UX:</span><span class="len">Product & UX:</span></b> <span class="lru">UX-исследования, пользовательские сценарии, CJM, дизайн-системы, A/B-тестирование, многорольной UX, доступность (WCAG)</span><span class="len">UX Research, User Flows, CJM, Design Systems, A/B Testing, Multi-role UX, Accessibility (WCAG)</span></span></div></div>
+      <div class="row"><div class="row-main"><span class="row-sub"><b><span class="lru">AI:</span><span class="len">AI:</span></b> <span class="lru">Cursor, Claude (Code & Design), OpenCode, Figma Make, Google AI Studio</span><span class="len">Cursor, Claude (Code & Design), OpenCode, Figma Make, Google AI Studio</span></span></div></div>
+      <div class="row"><div class="row-main"><span class="row-sub"><b><span class="lru">Инструменты:</span><span class="len">Tools:</span></b> <span class="lru">Figma, Miro, Notion, Asana, Adobe Creative Suite</span><span class="len">Figma, Miro, Notion, Asana, Adobe Creative Suite</span></span></div></div>
+      <div class="row"><div class="row-main"><span class="row-sub"><b><span class="lru">Лидерство:</span><span class="len">Leadership:</span></b> <span class="lru">Управление командой, найм и онбординг, менторство</span><span class="len">Team Management, Hiring & Onboarding, Mentorship</span></span></div></div>
+      <div class="row"><div class="row-main"><span class="row-sub"><b><span class="lru">Фронтенд:</span><span class="len">Frontend:</span></b> <span class="lru">HTML5, CSS3, JavaScript, Git, адаптивная и кроссбраузерная верстка</span><span class="len">HTML5, CSS3, JavaScript, Git, responsive & cross-browser layout</span></span></div></div>
+      <div class="row"><div class="row-main"><span class="row-sub"><b><span class="lru">Языки:</span><span class="len">Languages:</span></b> <span class="lru">Английский (B1 — Intermediate), русский (родной)</span><span class="len">English (B1 — Intermediate), Russian (Native)</span></span></div></div>
     </div>
   </section>
 
@@ -99,10 +105,10 @@
         <img class="shot-img" src="work-bashnya.jpg" alt="Bashnya game UI" onerror="this.remove()">
         <div class="mock browser"><div class="mock-bar"><i></i><i></i><i></i></div><div class="mock-grid"><span></span><span></span><span class="accent"></span><span></span><span></span><span></span></div></div>
       </div>
-      <div class="caption">
+<div class="caption">
         <div class="caption-title">Bashnya</div>
-        <p class="caption-text">Game interface &amp; UI kit. Feature dev <span class="nowrap"><b>7 → 3 days</b></span>, design-to-dev <span class="nowrap"><b>5 → 2 days</b></span>. AI icon set &amp; character praised by the art director</p>
-        <a class="case-link" href="cases/bashnya.html">Read case study →</a>
+        <p class="caption-text"><span class="lru">Игровой интерфейс и UI-кит. Разработка фич <span class="nowrap"><b>7 → 3 дня</b></span>, дизайн-в-дев <span class="nowrap"><b>5 → 2 дня</b></span>. AI-набор иконок и персонаж, похвален арт-директором</span><span class="len">Game interface & UI kit. Feature dev <span class="nowrap"><b>7 → 3 days</b></span>, design-to-dev <span class="nowrap"><b>5 → 2 days</b></span>. AI icon set & character praised by the art director</span></p>
+        <a class="case-link" href="cases/bashnya.html"><span class="lru">Читать кейс →</span><span class="len">Read case study →</span></a>
       </div>
     </article>
 
@@ -113,8 +119,8 @@
       </div>
       <div class="caption">
         <div class="caption-title">Forrest</div>
-        <p class="caption-text">ERP/CRM for restaurants, 3 roles + Kanban + dining-room configurator. <span class="nowrap"><b>−28%</b> order</span> time, <span class="nowrap"><b>−25%</b> reservation</span> time, <span class="nowrap"><b>−37%</b> conflicts</span>. Migrated MUI → custom Mantis system</p>
-        <a class="case-link" href="cases/forrest.html">Read case study →</a>
+        <p class="caption-text"><span class="lru">ERP/CRM для ресторанов, 3 роли + Канбан + конструктор зала. <span class="nowrap"><b>−28%</b> время заказа</span>, <span class="nowrap"><b>−25%</b> время бронирования</span>, <span class="nowrap"><b>−37%</b> конфликтов</span>. Миграция MUI → кастомная Mantis</span><span class="len">ERP/CRM for restaurants, 3 roles + Kanban + dining-room configurator. <span class="nowrap"><b>−28%</b> order</span> time, <span class="nowrap"><b>−25%</b> reservation</span> time, <span class="nowrap"><b>−37%</b> conflicts</span>. Migrated MUI → custom Mantis system</span></p>
+        <a class="case-link" href="cases/forrest.html"><span class="lru">Читать кейс →</span><span class="len">Read case study →</span></a>
       </div>
     </article>
 
@@ -125,7 +131,7 @@
       </div>
       <div class="caption">
         <div class="caption-title">Kant</div>
-        <p class="caption-text">Solo end-to-end: UX/UI, frontend and custom CMS. AI-assisted build in Cursor (generate → refactor → debug). No handoff step</p>
+        <p class="caption-text"><span class="lru">Соло энд-ту-энд: UX/UI, фронтенд и своя CMS. AI-ассистированная разработка в Cursor (генерация → рефакторинг → дебаг). Без этапа хэндоффа</span><span class="len">Solo end-to-end: UX/UI, frontend and custom CMS. AI-assisted build in Cursor (generate → refactor → debug). No handoff step</span></p>
       </div>
     </article>
 
@@ -136,8 +142,8 @@
       </div>
       <div class="caption">
         <div class="caption-title">The Gut Stuff</div>
-        <p class="caption-text">B2C MVP from scratch (trackers, reports, gamification) + redesign after testing. <span class="nowrap"><b>10K+ downloads</b></span>, launched in <span class="nowrap"><b>6 months</b></span>, <span class="nowrap">100% scope</span></p>
-        <a class="case-link" href="cases/gutstuff.html">Read case study →</a>
+        <p class="caption-text"><span class="lru">B2C MVP с нуля (трекеры, отчёты, геймификация) + редизайн после тестов. <span class="nowrap"><b>10K+ загрузок</b></span>, запуск за <span class="nowrap"><b>6 месяцев</b></span>, <span class="nowrap">100% скоуп</span></span><span class="len">B2C MVP from scratch (trackers, reports, gamification) + redesign after testing. <span class="nowrap"><b>10K+ downloads</b></span>, launched in <span class="nowrap"><b>6 months</b></span>, <span class="nowrap">100% scope</span></span></p>
+        <a class="case-link" href="cases/gutstuff.html"><span class="lru">Читать кейс →</span><span class="len">Read case study →</span></a>
       </div>
     </article>
 
@@ -148,8 +154,8 @@
       </div>
       <div class="caption">
         <div class="caption-title">SayMore</div>
-        <p class="caption-text">B2B2C social platform, desktop MVP designed solo in <span class="nowrap"><b>3 weeks</b></span>. Scalable design system, <span class="nowrap"><b>1000+ responsive screens</b></span></p>
-        <a class="case-link" href="cases/saymore.html">Read case study →</a>
+        <p class="caption-text"><span class="lru">B2B2C социальная платформа, десктопный MVP в одиночку за <span class="nowrap"><b>3 недели</b></span>. Масштабируемая дизайн-система, <span class="nowrap"><b>1000+ адаптивных экранов</b></span></span><span class="len">B2B2C social platform, desktop MVP designed solo in <span class="nowrap"><b>3 weeks</b></span>. Scalable design system, <span class="nowrap"><b>1000+ responsive screens</b></span></span></p>
+        <a class="case-link" href="cases/saymore.html"><span class="lru">Читать кейс →</span><span class="len">Read case study →</span></a>
       </div>
     </article>
 
@@ -158,9 +164,10 @@
         <img class="shot-img" src="work-oprosso.jpg" alt="Oprosso dashboard" onerror="this.remove()">
         <div class="mock browser"><div class="mock-bar"><i></i><i></i><i></i></div><div class="mock-table"><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
       </div>
-      <div class="caption">
+<div class="caption">
         <div class="caption-title">Oprosso</div>
-        <p class="caption-text">B2B dashboards for 3 roles, interactive Figma prototypes, Scrum trio. <span class="nowrap"><b>−18%</b> report</span> time, <span class="nowrap"><b>−12%</b> setup</span> errors, <span class="nowrap"><b>−15%</b> support</span> tickets</p>
+        <p class="caption-text"><span class="lru">B2B-дашборды для 3 ролей, интерактивные прототипы в Figma, скрам-трио. <span class="nowrap"><b>−18%</b> время отчётов</span>, <span class="nowrap"><b>−12%</b> ошибки настройки</span>, <span class="nowrap"><b>−15%</b> тикетов в поддержку</span></span><span class="len">B2B dashboards for 3 roles, interactive Figma prototypes, Scrum trio. <span class="nowrap"><b>−18%</b> report</span> time, <span class="nowrap"><b>−12%</b> setup</span> errors, <span class="nowrap"><b>−15%</b> support</span> tickets</span></p>
+        <a class="case-link" href="cases/oprosso.html"><span class="lru">Читать кейс →</span><span class="len">Read case study →</span></a>
       </div>
     </article>
     
@@ -170,8 +177,8 @@
         <div class="mock browser"><div class="mock-bar"><i></i><i></i><i></i></div><div class="mock-hero"><span></span></div><div class="mock-grid"><span></span><span></span><span></span></div></div></div>
       <div class="caption">
         <div class="caption-title">Trinoray</div>
-        <p class="caption-text">UX Research and Search Interface Redesign. Optimizing the logic helped the project secure a <span class="nowrap"><b>round of funding</b></span></p>
-        <a class="case-link" href="cases/trinoray.html">Read case study →</a>
+        <p class="caption-text"><span class="lru">UX-исследования и редизайн поискового интерфейса. Оптимизация логики помогла проекту получить <span class="nowrap"><b>раунд инвестиций</b></span></span><span class="len">UX Research and Search Interface Redesign. Optimizing the logic helped the project secure a <span class="nowrap"><b>round of funding</b></span></span></p>
+        <a class="case-link" href="cases/trinoray.html"><span class="lru">Читать кейс →</span><span class="len">Read case study →</span></a>
       </div>
     </article>
     
@@ -181,15 +188,15 @@
         <div class="mock browser"><div class="mock-bar"><i></i><i></i><i></i></div><div class="mock-hero"><span></span></div><div class="mock-grid"><span></span><span></span><span></span></div></div></div>
       <div class="caption">
         <div class="caption-title">Taromant</div>
-        <p class="caption-text">AI Tarot Reader (Telegram bot), soft monetization via the Wheel of Fortune. <span class="nowrap"><b>42%</b> D1 retention</span>, <span class="nowrap"><b>3.8%</b> conversion</span> rate for spin package purchases</p>
-        <a class="case-link" href="cases/taromant.html">Read case study →</a>
+        <p class="caption-text"><span class="lru">AI-таро в Telegram-боте, soft-монетизация через Колесо фортуны. <span class="nowrap"><b>42%</b> D1 retention</span>, <span class="nowrap"><b>3.8%</b> конверсия в покупку пакета спинов</span></span><span class="len">AI Tarot Reader (Telegram bot), soft monetization via the Wheel of Fortune. <span class="nowrap"><b>42%</b> D1 retention</span>, <span class="nowrap"><b>3.8%</b> conversion</span> rate for spin package purchases</span></p>
+        <a class="case-link" href="cases/taromant.html"><span class="lru">Читать кейс →</span><span class="len">Read case study →</span></a>
       </div>
     </article>
   </section>
 
   <!-- FOOTER (Figma: Footer) -->
   <footer class="narrow footer">
-    <span class="made">Made by Violetta ♥</span>
+    <span class="made"><span class="lru">Сделано Violetta ♥</span><span class="len">Made by Violetta ♥</span></span>
     <span class="foot-icons">
       <a class="icon-btn li" href="https://linkedin.com/in/violetta-morozova" target="_blank" rel="noopener" aria-label="LinkedIn">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.65 3H4.35C3.99196 3 3.64858 3.14223 3.39541 3.39541C3.14223 3.64858 3 3.99196 3 4.35V19.65C3 20.008 3.14223 20.3514 3.39541 20.6046C3.64858 20.8578 3.99196 21 4.35 21H19.65C20.008 21 20.3514 20.8578 20.6046 20.6046C20.8578 20.3514 21 20.008 21 19.65V4.35C21 3.99196 20.8578 3.64858 20.6046 3.39541C20.3514 3.14223 20.008 3 19.65 3ZM8.4 18.3H5.7V10.2H8.4V18.3ZM7.05 8.625C6.74056 8.61616 6.4406 8.51632 6.18758 8.33797C5.93456 8.15962 5.7397 7.91066 5.62737 7.6222C5.51503 7.33374 5.49019 7.01857 5.55595 6.71607C5.6217 6.41358 5.77515 6.13716 5.9971 5.92138C6.21906 5.70559 6.49968 5.55999 6.80391 5.50278C7.10814 5.44556 7.42248 5.47927 7.70766 5.59969C7.99284 5.7201 8.23622 5.92189 8.40737 6.17983C8.57853 6.43778 8.66987 6.74044 8.67 7.05C8.66289 7.47331 8.4885 7.8766 8.18495 8.17173C7.88139 8.46685 7.47335 8.62982 7.05 8.625ZM18.3 18.3H15.6V14.034C15.6 12.756 15.06 12.297 14.358 12.297C14.1522 12.3107 13.9511 12.3649 13.7663 12.4566C13.5815 12.5482 13.4166 12.6755 13.2811 12.831C13.1457 12.9866 13.0422 13.1674 12.9 13.971C12.8955 14.0129 12.8955 14.0551 12.9 14.097V18.3H10.2V10.2H12.81V11.37C13.0733 10.9695 13.435 10.6433 13.8605 10.4227C14.286 10.2021 14.761 10.0944 15.24 10.11C16.635 10.11 18.264 10.884 18.264 13.404L18.3 18.3Z"/></svg>
@@ -198,7 +205,7 @@
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
       </a>
     </span>
-    <a href="#top" class="to-top" id="toTop"><span>Top up</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
+    <a href="#top" class="to-top" id="toTop"><span><span class="lru">Наверх</span><span class="len">Top up</span></span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
   </footer>
 </main>
   <div class="floating-dock">

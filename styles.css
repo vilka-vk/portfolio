@@ -117,6 +117,9 @@ a.row:hover .row-title{text-decoration:underline;text-underline-offset:3px}
 .lang-toggle{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px;flex-shrink:0}
 .lang-toggle button{background:none;border:none;font-family:var(--mono);font-size:13px;color:var(--muted);padding:4px 12px;border-radius:999px;cursor:pointer}
 .lang-toggle button.on{background:var(--text);color:var(--bg)}
+
+/* Header language toggle */
+.topbar-inner .lang-toggle{margin-left:12px}
 .case h2{font-size:24px;font-weight:600;margin:48px 0 16px;letter-spacing:-.01em}
 .case h3{font-size:19px;font-weight:600;margin:32px 0 12px}
 .case h4{font-size:16px;font-weight:600;margin:24px 0 8px}

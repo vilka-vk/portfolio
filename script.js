@@ -172,7 +172,7 @@
   });
 })();
 
-// RU/EN language toggle for case pages
+// RU/EN language toggle (header on main page, case header on case pages)
 (function () {
   var t = document.getElementById('langToggle');
   if (!t) return;
